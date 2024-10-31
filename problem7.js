@@ -10,7 +10,7 @@ Example:
 
 const array = [1, 2, 3, 4, 5, 6, 7];
 
-const antidopalAverage = (array) => {
+const antipodalAverage = (array) => {
     let middleIndex = Math.floor(array.length / 2);
     if (array.length % 2 != 0) {
         array.splice(middleIndex, 1);
@@ -25,8 +25,8 @@ const antidopalAverage = (array) => {
     const result = sum.map((e) => e / 2);
     return result;
 }
-result = antidopalAverage(array);
+result = antipodalAverage(array);
 console.log(`El promedio antípoda del arreglo [${array}] es:\n[${result}]`);
 
 //*Ejemplo del ejercicio
-console.log(antidopalAverage([1,2,3,5,22,6]));
+console.log(antipodalAverage([1,2,3,5,22,6]));
